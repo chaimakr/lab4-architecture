@@ -1,6 +1,4 @@
 {% extends 'base.html' %}
-{% block head %}
-{% endblock %}
 
 {% block body %}
 <div class="bs-component m-5">
@@ -9,7 +7,7 @@
         <div class="card-body">
         <h5 class="card-title">Fill the form with the suitable information for a smoother process !</h5>
         <h6 class="card-subtitle text-muted">We'll never share your email with anyone else.</h6>
-            <form>
+            <form action="/apply"  >
                 <div class="form-group">
                 <label for="exampleInputEmail1">First Name</label>
                 <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter First Name">
@@ -51,6 +49,11 @@
                 <div class="form-group">
                     <label for="exampleTextarea" class="form-label mt-4">Loan Purpose</label>
                     <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="formFile" class="form-label mt-4">Upload your credential infos</label>
+                    <input class="form-control" type="file" id="formFile">
                   </div>
                 <button type="submit" class="btn btn-primary m-2">Apply for loan</button>
             </form>
