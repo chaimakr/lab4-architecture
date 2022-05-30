@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block head %}
+{% endblock %}
+
+{% block body %}
+<div class="bs-component m-5">
+    <div class="card mb-3">
+        <h3 class="card-header">The Application Form</h3>
+        <div class="card-body">
+        <h5 class="card-title">Fill the form with the suitable information for a smoother process !</h5>
+        <h6 class="card-subtitle text-muted">We'll never share your email with anyone else.</h6>
+            <form>
+                <div class="form-group">
+                <label for="exampleInputEmail1">First Name</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter First Name">
+                <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                </div>
+           
+                <div class="form-group">
+                <label for="exampleInputEmail1">Last Name</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Last Name">
+                </div>
+
+                <div class="form-group">
+                <label for="exampleInputEmail1">Salary</label>
+                <input type="Number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter salary">
+                </div>  
+                  
+                <div class="form-group">
+                <label for="exampleInputEmail1">Financial Situation</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter financial situation">
+                </div> 
+
+                <div class="form-group">
+                <label for="exampleInputEmail1">Age</label>
+                <input type="Number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter age">
+                </div> 
+
+                <div class="form-group">
+                <label for="exampleInputEmail1">loan Amount</label>
+                <input type="Number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter loan Amount">
+                </div> 
+
+                <div class="form-group">
+                <label for="exampleInputEmail1">loan Duration</label>
+                <input type="Number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter loan Duration">
+                </div> 
+
+
+                <div class="form-group">
+                    <label for="exampleTextarea" class="form-label mt-4">Loan Purpose</label>
+                    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                  </div>
+                <button type="submit" class="btn btn-primary m-2">Apply for loan</button>
+            </form>
+
+        </div>
+    </div>
+</div>
+{% endblock %}
