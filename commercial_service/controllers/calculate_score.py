@@ -1,4 +1,4 @@
-def calculate_score(salary,finantialSituation,age , loanAmount, loanDuration, loanPurpose):
+def calculate_score(salary,financialSituation,age , loanAmount, loanDuration, loanPurpose):
     initial_score=0
     if(age<20):
         initial_score=initial_score+0
@@ -10,9 +10,9 @@ def calculate_score(salary,finantialSituation,age , loanAmount, loanDuration, lo
         initial_score+=5
     if (age >=80):
         initial_score+=0
-    if (finantialSituation=="good"):
+    if (financialSituation=="good"):
         initial_score+=10
-    if (finantialSituation=="bad"):
+    if (financialSituation=="bad"):
         initial_score+=0
     if (loanAmount<=100000):
         initial_score+=20
